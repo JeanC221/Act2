@@ -20,15 +20,17 @@ Este proyecto utiliza Docker y Docker Compose para gestionar múltiples servicio
     ```bash
     docker-compose up --build
     ```
-2.1 Para eliminiar todos los contenedores y volumenes:
+
+3. Construye y ejecuta los contenedores:
     ```bash
     docker-compose down -v --rmi all
     ```
+    
 ## Estructura del Proyecto
 
 - **cont2/**: Contiene el Dockerfile y la aplicación para el contenedor 2.
 - **cont3/**: Contiene el Dockerfile y la aplicación para el contenedor 3.
-- **proxy/**: Contiene el Dockerfile y la configuración de Nginx para el proxy inverso.
+- **proxy/**: Contiene el Dockerfile y la configuración de la pagina web
 
 ## Archivos Clave
 
