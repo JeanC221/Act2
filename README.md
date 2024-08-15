@@ -1,4 +1,4 @@
-# ActividadPC2
+ # Actividad PC2
 
 # Proyecto Docker Composer
 
@@ -21,7 +21,7 @@ Este proyecto utiliza Docker y Docker Compose para gestionar múltiples servicio
     docker-compose up --build
     ```
 
-3. Construye y ejecuta los contenedores:
+3. Elimina los contenedores y volumenes previos:
     ```bash
     docker-compose down -v --rmi all
     ```
