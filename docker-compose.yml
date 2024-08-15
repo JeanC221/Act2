@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  cont2:
+    build:
+      context: ./cont2
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - FLASK_APP=app1.py
+
+  cont3:
+    build:
+      context: ./cont3
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8001"
+    environment:
+      - FLASK_APP=app2.py
+
+  proxy:
+    build:
+      context: ./proxy
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    environment:
+      - FLASK_APP=app.py
+
+    depends_on:
+      - cont2
+      - cont3
