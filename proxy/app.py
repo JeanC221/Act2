@@ -6,10 +6,10 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return """
-    <h1>Welcome to our Docker Compose Project</h1>
+    <h1>Bienvenido a nuestro proyecto con Docker Composer</h1>
     <ul>
         <li><a href="/c2">Ir al contenedor 2</a></li>
-        <li><a href="/c3">Ir al contenedor 3 3</a></li>
+        <li><a href="/c3">Ir al contenedor 3</a></li>
     </ul>
     """
 
